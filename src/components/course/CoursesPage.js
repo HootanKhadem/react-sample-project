@@ -19,7 +19,7 @@ class CoursesPage extends React.Component {
     }
 
     redirectToAddCoursePage() {
-        browserHistory.push('/courses');
+        browserHistory.push('/ManageCourse');
     }
 
 
@@ -28,11 +28,11 @@ class CoursesPage extends React.Component {
         return (
             <div>
                 <h1>Courses</h1>
+                <CourseList courses={courses}/>
                 <input type="submit"
                        value="Add Course"
                        className="btn btn-primary"
                        onClick={this.redirectToAddCoursePage}/>
-                <CourseList courses={courses}/>
 
             </div>
         );

@@ -18,7 +18,7 @@ const CourseForm = ({course, allAuthors, onSave, onChange, loading, errors}) => 
                 name="authorId"
                 label="Author"
                 value={course.authorId}
-                defaultOption="Select Author"
+                defaultOptions="Select Author"
                 options={allAuthors}
                 onChange={onChange}
                 error={errors.authorId}/>
